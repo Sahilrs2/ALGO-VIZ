@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "target": "ES6",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "backend/src/config/database.js",
+    "backend/src/middleware/authMiddleware.js",
+    "backend/src/middleware/errorHandler.js",
+    "backend/src/models/User.js",
+    "backend/src/models/Visualization.js",
+    "backend/src/routes/algorithmRoutes.js",
+    "backend/src/routes/authRoutes.js",
+    "backend/src/routes/userRoutes.js"
+, "backend/src/services/algorithmService.js", "backend/src/server.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "algorithm-visualizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive algorithm visualizer built with MERN stack",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "lint": "eslint . --ext .ts,.tsx,.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "axios": "^1.15.2",
+    "bcryptjs": "^3.0.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "framer-motion": "^12.38.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.9.0",
+    "mongoose": "^9.5.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.14.2",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "eslint": "^8.57.0",
+    "typescript": "5.7.3"
+  }
+}
